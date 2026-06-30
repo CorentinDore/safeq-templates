@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mot de passe à usage unique – SAFEQ Cloud</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 0; font-size: 16px; line-height: 1.6; }
+    .container { max-width: 700px; margin: 30px auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 3px 6px rgba(0,0,0,0.1); }
+    .header { background-color: #007AC2; color: white; padding: 25px; text-align: center; font-size: 24px; font-weight: bold; }
+    .content { padding: 25px; font-size: 17px; }
+    .content p { margin: 12px 0; }
+    .otp { background-color: #f2f6ff; padding: 12px 18px; border-radius: 5px; display: inline-block; font-weight: bold; color: #007AC2; font-size: 20px; letter-spacing: 1px; }
+    .steps { margin-top: 10px; padding-left: 20px; }
+    .inline-logo { height: 20px; vertical-align: middle; margin-left: 5px; }
+    .footer { padding: 15px 25px; font-size: 14px; background-color: #f9f9f9; color: #666; text-align: center; }
+    @media (max-width: 700px) { .container { margin: 15px; } .inline-logo { height: 16px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">🔐 Mot de passe à usage unique – SAFEQ Cloud</div>
+    <div class="content">
+      <p>Bonjour <strong>{{username}}</strong>,</p>
+      <p>🔑 <strong>Votre mot de passe à usage unique est :</strong></p>
+      <p><span class="otp">{{userotp}}</span></p>
+      <p>Ce <strong>mot de passe à usage unique</strong> vous permettra d'enregistrer votre badge dans la solution SAFEQ Cloud.</p>
+      <p>🪪 <strong>Procédure d'enregistrement de votre badge :</strong></p>
+      <ol class="steps">
+        <li>📟 Passer votre badge</li>
+        <li>👤 Renseigner votre login : <strong>{{username}}</strong></li>
+        <li>🔑 Renseigner le mot de passe à usage unique : <strong>{{userotp}}</strong></li>
+      </ol>
+      <p>⚠️ <strong>Cette procédure est à effectuer une seule fois.</strong></p>
+      <br>
+      <p>Merci. Pour toute demande, n'hésitez pas à contacter votre service informatique.</p>
+      <p>La solution <img src="https://corentindore.github.io/images-html-access/SAFEQ-Cloud-Logo.png" alt="SAFEQ Cloud" class="inline-logo"></p>
+    </div>
+    <div class="footer">⚠️ Ce message a été généré automatiquement par SAFEQ Cloud.</div>
+  </div>
+</body>
+</html>
